@@ -1,3 +1,4 @@
+import 'package:chuva_canvas_flutter/rain_painter.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -22,6 +23,10 @@ class _HomePageState extends State<HomePage> {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
             ),
+          ),
+          child: CustomPaint(
+            painter: RainPainter(),
+            child: Container(),
           ),
         ),
       ],
